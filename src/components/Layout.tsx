@@ -176,7 +176,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
               className="flex items-center gap-1 bg-[#25D366] hover:bg-[#20ba5a] text-white font-extrabold text-[10px] lg:text-xs px-2.5 lg:px-4 py-2 lg:py-2.5 rounded-lg shadow-sm border border-emerald-500/20 transition-all active:scale-95 duration-200 whitespace-nowrap"
             >
               <WhatsAppIcon className="w-4 h-4" />
-              <span>WhatsApp / যোগাযোগ</span>
+              <span>{t('nav.whatsappBtn')}</span>
             </a>
           </div>
 
@@ -276,7 +276,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
                     className="flex items-center justify-center gap-2.5 w-full bg-teal-900 hover:bg-teal-800 text-cream font-bold text-sm py-3 rounded-xl shadow-sm border border-teal-950 transition-transform active:scale-95 duration-200"
                   >
                     <Phone className="w-4 h-4 text-amber-500" />
-                    <span>{t('nav.callBtn')} / কল করুন</span>
+                    <span>{t('nav.callBtn')}</span>
                   </a>
                   <a
                     href={whatsappUrl}
@@ -285,7 +285,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
                     className="flex items-center justify-center gap-2.5 w-full bg-[#25D366] hover:bg-[#20ba5a] text-white font-extrabold text-sm py-3 rounded-xl shadow-sm border border-emerald-500/20 transition-transform active:scale-95 duration-200"
                   >
                     <WhatsAppIcon className="w-4 h-4" />
-                    <span>{t('nav.whatsappBtn')} / চ্যাট করুন</span>
+                    <span>{t('nav.whatsappBtn')}</span>
                   </a>
                 </div>
 
@@ -364,10 +364,6 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
                 <Clock className="w-4.5 h-4.5 text-amber-500 shrink-0" />
                 <p>{t('footer.hours')}</p>
               </div>
-              <div className="flex items-center gap-2.5">
-                <Phone className="w-4.5 h-4.5 text-amber-500 shrink-0" />
-                <p>{t('nav.callUs')}</p>
-              </div>
             </div>
           </div>
         </div>
@@ -391,7 +387,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
             className="flex items-center justify-center gap-2 w-full bg-teal-900 hover:bg-teal-800 text-cream font-bold text-sm py-3.5 rounded-xl border border-teal-950 shadow-sm transition-transform active:scale-95 duration-200"
           >
             <Phone className="w-4 h-4 text-amber-500" />
-            <span>{t('nav.callBtn')} / কল করুন</span>
+            <span>{t('nav.callBtn')}</span>
           </a>
           <a
             href={whatsappUrl}
@@ -400,7 +396,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
             className="flex items-center justify-center gap-2 w-full bg-[#25D366] hover:bg-[#20ba5a] text-white font-extrabold text-sm py-3.5 rounded-xl border border-emerald-500/20 shadow-sm transition-transform active:scale-95 duration-200"
           >
             <WhatsAppIcon className="w-4 h-4" />
-            <span>WhatsApp / চ্যাট</span>
+            <span>{t('nav.whatsappBtn')}</span>
           </a>
         </div>
       </div>
