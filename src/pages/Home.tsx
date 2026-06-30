@@ -12,6 +12,41 @@ export const Home: React.FC = () => {
   const { language, t } = useLanguage();
   const isBn = language === 'bn';
 
+  const [activeFaq, setActiveFaq] = React.useState<number | null>(null);
+
+  const faqs = [
+    {
+      q: "Where is Mahamaya Enterprise located in Purba Bardhaman?",
+      qBn: "মহামায়া এন্টারপ্রাইজ পূর্ব বর্ধমানে কোথায় অবস্থিত?",
+      a: "Our showroom is located in Eruar, Bhatar, Purba Bardhaman, West Bengal - 713121. We are situated near the local landmark Eruar HDS Balika Vidyalaya and near the Eruar bus stand, making it convenient to load bulk fish feed and supplies.",
+      aBn: "আমাদের শোরুম পূর্ব বর্ধমানের ভাতাড় ব্লকের এড়ুয়ার গ্রামে (পিন ৭১৩১২১) অবস্থিত। এটি এড়ুয়ার এইচ.ডি.এস বালিকা বিদ্যালয় এবং স্থানীয় বাস স্ট্যান্ডের কাছে অবস্থিত, যার ফলে পাইকারি মৎস্য খাদ্য বোঝাই করা অত্যন্ত সুবিধাজনক।"
+    },
+    {
+      q: "What products are available at Mahamaya Enterprise?",
+      qBn: "মহামায়া এন্টারপ্রাইজে কী কী প্রোডাক্ট পাওয়া যায়?",
+      a: "We are leading stockists and wholesalers of premium aquaculture brands. We supply the full catalog of Care Chem Remedies pond conditioners (Bhalo Jall, Geolite, Oxicare, Cal Care, Kholosh) and high-nutrition Almas Agrovet floating fish feed (3mm pellet size) and supplements.",
+      aBn: "আমরা অ্যাকুয়াকালচার ব্র্যান্ডের নির্ভরযোগ্য বিক্রেতা। আমাদের কাছে কেয়ার কেম রেমেডিসের পুকুর শোধক ঔষধ (যেমন: ভালো জল, জিওলাইট, অক্সিকেয়ার, ক্যাল কেয়ার, খোলস) এবং আলমাস অ্যাগ্রোভেটের পুষ্টিকর ভাসমান মাছের খাবার (৩ মিমি দানাদার ফিড) ও সাপ্লিমেন্ট পাওয়া যায়।"
+    },
+    {
+      q: "Do you offer free pond water testing?",
+      qBn: "আপনারা কি পুকুরের জল বিনামূল্যে পরীক্ষা করেন?",
+      a: "Yes! Local freshwater fish and shrimp farmers are welcome to bring water samples from their ponds to our Eruar store. We test critical parameters including pH, Dissolved Oxygen (DO), and toxic ammonia gas levels, and prepare custom dosage charts.",
+      aBn: "হ্যাঁ! mৎস্য চাষীরা তাঁদের পুকুরের জলের নমুনা সরাসরি আমাদের এড়ুয়ার দোকানে নিয়ে আসতে পারেন। আমরা বিনামূল্যে জলের পিএইচ (pH), অক্সিজেন (DO), এবং বিষাক্ত অ্যামোনিয়া গ্যাস পরীক্ষা করে প্রয়োজনীয় ঔষধের ডোজিং চার্ট তৈরি করে দিই।"
+    },
+    {
+      q: "What are your business hours?",
+      qBn: "আপনাদের দোকান কখন খোলা থাকে?",
+      a: "Mahamaya Enterprise is open daily from Monday to Sunday, from 7:00 AM to 9:00 PM, providing weekly support and urgent assistance for fishery farms in Bhatar block.",
+      aBn: "মহামায়া এন্টারপ্রাইজ সপ্তাহের ৭ দিনই খোলা থাকে। সোমবার থেকে রবিবার প্রতিদিন সকাল ৭:০০টা থেকে রাত ৯:০০টা পর্যন্ত আমরা দোকানে সরাসরি এবং ফোনে চাষীদের সেবা দিয়ে থাকি।"
+    },
+    {
+      q: "How can I calculate the correct medicine dosage for my pond?",
+      qBn: "আমি কীভাবে আমার পুকুরের জন্য সঠিক ঔষধের ডোজ নির্ধারণ করব?",
+      a: "Dosages depend on your pond area (measured in Bigha or decimals) and water depth. You can consult our staff at the store or share your pond details via WhatsApp (+91 94756 53294), and we will calculate the exact amount of Bhalo Jall or Oxicare required to prevent chemical wastage.",
+      aBn: "ঔষধের ডোজ সাধারণত আপনার পুকুরের ক্ষেত্রফল (বিঘা বা শতক) এবং গভীরতার ওপর নির্ভর করে। আপনি সরাসরি আমাদের দোকানে এসে অথবা হোয়াটসঅ্যাপে (+৯১ ৯৪৭৫৬ ৫৩২৯৪) যোগাযোগ করে আপনার পুকুরের পরিমাপ জানালে আমাদের টেকনিশিয়ানরা প্রয়োজনীয় ঔষধের সঠিক ডোজিং হিসেব করে দেবেন।"
+    }
+  ];
+
   // Selected 6 bestseller products for the home highlights
   const featuredProducts = products.filter(p => 
     ['bhalo-jall', 'oxicare', 'cal-care', 'gas-o-cure-plus', 'grow-plus-fish-supplement', 'vita-gold-multi-vitamin-trace-mineral-supplement'].includes(p.slug)
@@ -437,6 +472,50 @@ export const Home: React.FC = () => {
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* 5.5 FAQ ACCORDION SECTION (SEO & Google Rich Snippets) */}
+      <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto text-left">
+        <div className="text-center mb-12">
+          <span className="px-3 py-1 rounded-full text-xs font-bold bg-teal-900/5 text-teal-900 uppercase tracking-widest">
+            {isBn ? 'জিজ্ঞাসিত প্রশ্নাবলী' : 'Frequently Asked Questions'}
+          </span>
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-teal-900 mt-2">
+            {isBn ? 'মৎস্য চাষের সাধারণ জিজ্ঞাসা ও সমাধান' : 'Local Aquaculture Advisory FAQ'}
+          </h2>
+          <p className="text-charcoal-light text-sm sm:text-base mt-2">
+            {isBn ? 'পুকুরের জলের সঠিক পরিচর্যা ও ফিড ডোজ সংক্রান্ত প্রশ্নাবলী।' : 'Scientific guidance and local store support details for Purba Bardhaman fish farmers.'}
+          </p>
+        </div>
+
+        <div className="flex flex-col gap-3.5">
+          {faqs.map((faq, idx) => {
+            const isOpen = activeFaq === idx;
+            return (
+              <div 
+                key={idx} 
+                className="bg-white rounded-2xl border border-teal-900/5 shadow-sm overflow-hidden transition-all duration-200"
+              >
+                <button
+                  onClick={() => setActiveFaq(isOpen ? null : idx)}
+                  className="w-full py-5 px-6 flex items-center justify-between gap-4 text-left font-extrabold text-sm sm:text-base text-teal-900 hover:bg-teal-900/5 transition-colors cursor-pointer select-none"
+                >
+                  <span>{isBn ? faq.qBn : faq.q}</span>
+                  <span className={`text-xl font-bold text-amber-500 transform transition-transform duration-200 ${isOpen ? 'rotate-45' : ''}`}>
+                    +
+                  </span>
+                </button>
+                <div 
+                  className={`transition-all duration-300 ease-in-out ${isOpen ? 'max-h-56 border-t border-teal-900/5' : 'max-h-0'}`}
+                >
+                  <p className="p-6 text-xs sm:text-sm leading-relaxed text-charcoal-light whitespace-pre-line bg-cream/20">
+                    {isBn ? faq.aBn : faq.a}
+                  </p>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </section>
 
