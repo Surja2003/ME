@@ -70,9 +70,9 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
           "@context": "https://schema.org",
           "@type": "LocalBusiness",
           "name": "Mahamaya Enterprise",
-          "image": "https://mahamayaenterprise.com/logo-preview.jpg",
-          "@id": "https://mahamayaenterprise.com",
-          "url": "https://mahamayaenterprise.com",
+          "image": "https://mahamayaenterprise.shop/logo-preview.jpg",
+          "@id": "https://mahamayaenterprise.shop",
+          "url": "https://mahamayaenterprise.shop",
           "telephone": phoneNumber,
           "address": {
             "@type": "PostalAddress",
