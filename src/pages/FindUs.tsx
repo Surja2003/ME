@@ -4,9 +4,17 @@ import { useLanguage } from '../context/LanguageContext';
 
 export const FindUs: React.FC = () => {
   const { t } = useLanguage();
-  const latitude = '23.4588';
-  const longitude = '87.8712';
+
+  // Official GPS coordinates of Mahamaya Enterprise, Eruar
+  const latitude  = '23.466258332381454';
+  const longitude = '87.87078764126294';
+
+  // Google Maps directions link to exact pin
   const mapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${latitude},${longitude}`;
+
+  // Google Maps satellite embed (t=k = satellite layer, z=19 = maximum zoom)
+  const embedSrc = `https://maps.google.com/maps?q=${latitude},${longitude}&t=k&z=19&output=embed&hl=en`;
+
   const rawPhone = '9434661990';
 
   return (
@@ -22,6 +30,7 @@ export const FindUs: React.FC = () => {
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
+
         {/* Left Column: Details */}
         <div className="lg:col-span-5 flex flex-col gap-6">
           <div className="bg-white p-6 rounded-2xl border border-teal-900/5 shadow-sm flex flex-col gap-5">
@@ -29,7 +38,7 @@ export const FindUs: React.FC = () => {
               <MapPin className="w-5 h-5 text-amber-500" />
               <span>{t('find.addressTitle')}</span>
             </h3>
-            
+
             <p className="text-sm sm:text-base text-charcoal-light leading-relaxed whitespace-pre-line">
               <strong className="text-charcoal">Mahamaya Enterprise</strong><br />
               {t('find.addressDetails')}
@@ -49,7 +58,7 @@ export const FindUs: React.FC = () => {
               <Clock className="w-5 h-5 text-amber-500" />
               <span>{t('find.hoursTitle')}</span>
             </h3>
-            
+
             <div className="text-sm text-charcoal-light space-y-2">
               <div className="flex justify-between py-1 border-b border-teal-900/5 font-semibold">
                 <span>{t('find.hoursWeek')}</span>
@@ -95,20 +104,22 @@ export const FindUs: React.FC = () => {
           </div>
         </div>
 
-        {/* Right Column: OpenStreetMap centered on Bhatar/Eruar */}
+        {/* Right Column: Google Maps Satellite — pinned to exact shop location */}
         <div className="lg:col-span-7 bg-white rounded-3xl border border-teal-900/5 overflow-hidden shadow-sm aspect-square md:aspect-video lg:aspect-auto lg:h-full min-h-[350px]">
           <iframe
-            title="Mahamaya Enterprise Location Map"
+            title="Mahamaya Enterprise — Satellite Location Map"
             width="100%"
             height="100%"
             frameBorder="0"
             scrolling="no"
             marginHeight={0}
             marginWidth={0}
-            src="https://www.openstreetmap.org/export/embed.html?bbox=87.8662%2C23.4548%2C87.8762%2C23.4628&amp;layer=mapnik&amp;marker=23.4588%2C87.8712"
-            className="border-none min-h-[350px] h-full w-full opacity-90 hover:opacity-100 transition-opacity"
+            src={embedSrc}
+            className="border-none min-h-[350px] h-full w-full"
+            allowFullScreen
           />
         </div>
+
       </div>
     </div>
   );

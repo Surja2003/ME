@@ -84,8 +84,8 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
           },
           "geo": {
             "@type": "GeoCoordinates",
-            "latitude": 23.4182,
-            "longitude": 87.9048
+            "latitude": 23.466258332381454,
+            "longitude": 87.87078764126294
           },
           "openingHoursSpecification": {
             "@type": "OpeningHoursSpecification",
