@@ -307,7 +307,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
       </main>
 
       {/* FOOTER */}
-      <footer className="bg-teal-900 text-cream/90 pt-16 pb-28 md:pb-16 border-t border-amber-500/10">
+      <footer className="bg-teal-900 text-cream/90 py-16 border-t border-amber-500/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12">
           
           {/* Brand & Mission Statement */}
@@ -379,27 +379,6 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
         </div>
       </footer>
 
-      {/* MOBILE STICKY BOTTOM BAR (Call + WhatsApp with official logo) */}
-      <div className="fixed bottom-0 left-0 right-0 z-30 md:hidden glass-sticky-bar py-3.5 px-4 shadow-xl border-t border-teal-900/10">
-        <div className="grid grid-cols-2 gap-3 max-w-md mx-auto">
-          <a
-            href={`tel:${rawPhone}`}
-            className="flex items-center justify-center gap-2 w-full bg-teal-900 hover:bg-teal-800 text-cream font-bold text-sm py-3.5 rounded-xl border border-teal-950 shadow-sm transition-transform active:scale-95 duration-200"
-          >
-            <Phone className="w-4 h-4 text-amber-500" />
-            <span>{t('nav.callBtn')}</span>
-          </a>
-          <a
-            href={whatsappUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center justify-center gap-2 w-full bg-[#25D366] hover:bg-[#20ba5a] text-white font-extrabold text-sm py-3.5 rounded-xl border border-emerald-500/20 shadow-sm transition-transform active:scale-95 duration-200"
-          >
-            <WhatsAppIcon className="w-4 h-4" />
-            <span>{t('nav.whatsappBtn')}</span>
-          </a>
-        </div>
-      </div>
     </div>
   );
 };
