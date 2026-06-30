@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.mahamayaenterprise.shop/sitemap.xml
+
+# Crawl-delay (optional, be polite to bots)
+Crawl-delay: 5
