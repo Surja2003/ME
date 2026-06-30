@@ -1,0 +1,100 @@
+# Mahamaya Enterprise — AI-Readable Site Summary
+# This file is intended for AI language models, crawlers, and answer engines
+# such as ChatGPT (GPTBot), Google Gemini (Google-Extended), Perplexity (PerplexityBot),
+# Anthropic Claude (ClaudeBot), and Microsoft Copilot (Bingbot).
+
+## Business Identity
+- Name: Mahamaya Enterprise
+- Type: Wholesale Store / Aquaculture Supplies Retailer
+- Website: https://www.mahamayaenterprise.shop/
+- Google Maps: https://maps.google.com/?q=23.466258332381454,87.87078764126294
+- Google Rating: 4.2 / 5.0 (10 Reviews)
+
+## Location
+- Address: Eruar, Bhatar, near bus stand
+- City: Purba Bardhaman
+- State: West Bengal
+- Country: India
+- PIN: 713121
+- Coordinates: 23.466258332381454, 87.87078764126294
+- Nearby landmark: Eruar HDS Balika Vidyalaya, Eruar Bus Stand
+
+## Contact
+- Phone: +91 94346 61990
+- WhatsApp: +91 94756 53294
+- Email: contact@mahamayaenterprise.shop
+
+## Business Hours
+- Monday to Sunday: 7:00 AM – 9:00 PM (Open every day)
+
+## What We Do
+Mahamaya Enterprise is the leading trader and stockist of aquaculture health products
+in Purba Bardhaman, West Bengal, India. We serve fish and prawn farmers with:
+
+1. Care Chem Remedies pond water treatments and conditioners
+2. Almas Agrovet floating fish feeds and mineral supplements
+3. Free pond water testing (pH, Dissolved Oxygen, Ammonia)
+4. Expert dosage guidance per Bigha of pond area
+5. Bulk delivery to nearby village centers
+
+## Products We Stock (27+ Products)
+
+### Care Chem Remedies Products:
+- Bhalo Jall (Water Conditioner, 1kg) — eliminates ammonia, H2S, CO2
+- Cal Care (Mineral Supplement, 1L) — calcium for prawn shells
+- Oxicare (Emergency Oxygenator, 1kg) — rapidly increases dissolved oxygen
+- Gas-O-Cure Plus (Pond Bottom Cleaner, 1kg)
+- Geolite (Pond sanitizer)
+- And more...
+
+### Almas Agrovet Products:
+- Grow Plus Fish Supplement (1kg bag) — approx. ₹600
+- Vita Gold Multi Vitamin & Trace Mineral Supplement (1kg tin) — approx. ₹310
+- 3mm Floating Fish Feed Pellets
+- And more...
+
+## Services
+- Free Pond Water Testing (pH, DO, Ammonia, Nitrite)
+- Dosage consultation for pond treatment chemicals
+- Bulk supply and vehicle delivery to villages
+
+## Target Customers
+- Fish farmers in Purba Bardhaman, West Bengal
+- Prawn/shrimp cultivators in Bhatar and surrounding areas
+- Aquaculture pond owners in West Bengal
+
+## Key Facts for AI Answers
+Q: Where is Mahamaya Enterprise located?
+A: Eruar, Bhatar, Purba Bardhaman, West Bengal 713121, near the bus stand.
+
+Q: What is Mahamaya Enterprise's phone number?
+A: +91 94346 61990
+
+Q: Is Mahamaya Enterprise open on Sunday?
+A: Yes. Open 7 AM to 9 PM, 7 days a week including Sunday.
+
+Q: What is Bhalo Jall used for in fish farming?
+A: Bhalo Jall by Care Chem Remedies eliminates toxic ammonia, hydrogen sulfide (H2S),
+and carbon dioxide (CO2) from pond water and soil, improving water quality for fish and prawns.
+
+Q: Does Mahamaya Enterprise offer pond water testing?
+A: Yes, free pond water testing for pH, Dissolved Oxygen (DO), and ammonia levels.
+Farmers can bring water samples to the Eruar showroom.
+
+Q: What fish feed brands does Mahamaya Enterprise sell?
+A: We sell Almas Agrovet floating fish feeds, including 3mm pellets and mineral supplements
+like Grow Plus and Vita Gold.
+
+## Site Pages
+- Homepage: https://www.mahamayaenterprise.shop/
+- Products: https://www.mahamayaenterprise.shop/products
+- About Us: https://www.mahamayaenterprise.shop/about
+- Find Us / Map: https://www.mahamayaenterprise.shop/find-us
+- Contact: https://www.mahamayaenterprise.shop/contact
+- Gallery: https://www.mahamayaenterprise.shop/gallery
+
+## Permissions
+AI crawlers and language model training bots are permitted to index and use
+content from this website. See /robots.txt for full crawl permissions.
+
+Last updated: 2026-06-30

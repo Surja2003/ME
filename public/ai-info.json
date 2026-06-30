@@ -1,0 +1,106 @@
+{
+  "business": {
+    "name": "Mahamaya Enterprise",
+    "type": ["WholesaleStore", "AquacultureSuppliesRetailer", "LocalBusiness"],
+    "website": "https://www.mahamayaenterprise.shop/",
+    "established": "2014",
+    "rating": {
+      "value": 4.2,
+      "scale": 5,
+      "count": 10,
+      "source": "Google Reviews"
+    }
+  },
+  "location": {
+    "address": "Eruar, Bhatar, near bus stand",
+    "city": "Purba Bardhaman",
+    "state": "West Bengal",
+    "country": "India",
+    "pin": "713121",
+    "coordinates": {
+      "lat": 23.466258332381454,
+      "lng": 87.87078764126294
+    },
+    "landmark": "Near Eruar HDS Balika Vidyalaya and local bus stand",
+    "googleMaps": "https://maps.google.com/?q=23.466258332381454,87.87078764126294"
+  },
+  "contact": {
+    "phone": "+919434661990",
+    "whatsapp": "+919475653294",
+    "email": "contact@mahamayaenterprise.shop"
+  },
+  "hours": {
+    "monday": "07:00-21:00",
+    "tuesday": "07:00-21:00",
+    "wednesday": "07:00-21:00",
+    "thursday": "07:00-21:00",
+    "friday": "07:00-21:00",
+    "saturday": "07:00-21:00",
+    "sunday": "07:00-21:00"
+  },
+  "products": {
+    "totalCount": 27,
+    "brands": ["Care Chem Remedies", "Almas Agrovet"],
+    "categories": [
+      "Water Conditioner",
+      "Oxygen Supplement",
+      "Mineral Supplement",
+      "Pond Bottom Cleaner",
+      "Fish Feed",
+      "Growth Supplement",
+      "Disease Treatment"
+    ],
+    "bestsellers": [
+      {
+        "name": "Bhalo Jall",
+        "brand": "Care Chem Remedies",
+        "use": "Eliminates toxic ammonia, H2S, CO2 from pond water",
+        "packSize": "1kg"
+      },
+      {
+        "name": "Oxicare",
+        "brand": "Care Chem Remedies",
+        "use": "Emergency pond oxygenation",
+        "packSize": "1kg"
+      },
+      {
+        "name": "Cal Care",
+        "brand": "Care Chem Remedies",
+        "use": "Calcium supplement for prawn molting",
+        "packSize": "1L bottle"
+      },
+      {
+        "name": "Grow Plus Fish Supplement",
+        "brand": "Almas Agrovet",
+        "use": "All-natural growth nutrient blend",
+        "packSize": "1kg bag",
+        "price": "~INR 600"
+      },
+      {
+        "name": "Vita Gold Multi Vitamin & Trace Mineral Supplement",
+        "brand": "Almas Agrovet",
+        "use": "Concentrated vitamin and mineral fortification",
+        "packSize": "1kg tin",
+        "price": "~INR 310"
+      }
+    ]
+  },
+  "services": [
+    "Free pond water testing (pH, Dissolved Oxygen, Ammonia)",
+    "Expert dosage guidance per Bigha",
+    "Bulk supply and vehicle delivery",
+    "Aquaculture consultation"
+  ],
+  "targetAudience": [
+    "Fish farmers in Purba Bardhaman",
+    "Prawn/shrimp cultivators in Bhatar",
+    "Aquaculture pond owners in West Bengal"
+  ],
+  "aiPermissions": {
+    "indexing": "allowed",
+    "training": "allowed",
+    "summarization": "allowed",
+    "crawlers": ["GPTBot", "Google-Extended", "PerplexityBot", "ClaudeBot", "Bingbot"]
+  },
+  "lastUpdated": "2026-06-30"
+}

@@ -1,8 +1,68 @@
+# Mahamaya Enterprise — robots.txt
+# https://www.mahamayaenterprise.shop/
+
+# ── Standard Search Engines ──
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# ── AI Language Model Crawlers ──
+# OpenAI / ChatGPT
+User-agent: GPTBot
+Allow: /
+
+# Google Gemini training
+User-agent: Google-Extended
+Allow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# Anthropic Claude
+User-agent: ClaudeBot
+Allow: /
+User-agent: anthropic-ai
+Allow: /
+
+# Meta AI
+User-agent: meta-externalagent
+Allow: /
+
+# Common Crawl (used by many AI models)
+User-agent: CCBot
+Allow: /
+
+# Applebot (Siri / Apple AI)
+User-agent: Applebot
+Allow: /
+
+# Cohere AI
+User-agent: cohere-ai
+Allow: /
+
+# ── Default: Allow all ──
 User-agent: *
 Allow: /
 
-# Sitemap location
+# ── Disallow admin/private paths ──
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.env
+
+# ── Sitemap ──
 Sitemap: https://www.mahamayaenterprise.shop/sitemap.xml
 
-# Crawl-delay (optional, be polite to bots)
-Crawl-delay: 5
+# ── AI-readable content ──
+# AI crawlers: see /llms.txt for structured business summary
+# AI crawlers: see /ai-info.json for machine-readable business data
+
+Crawl-delay: 3
