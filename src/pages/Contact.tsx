@@ -37,6 +37,32 @@ export const Contact: React.FC = () => {
       alert(isBn ? 'অনুগ্রহ করে আপনার নাম এবং ফোন নম্বরটি লিখুন।' : 'Please fill out your Name and Phone Number.');
       return;
     }
+
+    // Resolve product name
+    const selectedProd = products.find(p => p.slug === formData.product);
+    const prodDisplay = selectedProd 
+      ? (isBn ? selectedProd.nameBn : selectedProd.name) 
+      : (formData.product || (isBn ? 'কোনো নির্দিষ্ট পণ্য নয়' : 'None'));
+
+    // Construct the WhatsApp message
+    const waText = isBn
+      ? `*মহামায়া এন্টারপ্রাইজ - ইনকোয়ারি বিবরণ*\n` +
+        `=========================\n` +
+        `• *নাম:* ${formData.name}\n` +
+        `• *ফোন নম্বর:* ${formData.phone}\n` +
+        `• *পছন্দের পণ্য:* ${prodDisplay}\n` +
+        `• *পুকুরের লক্ষণ / বিবরণ:* \n${formData.message || 'নেই'}`
+      : `*Mahamaya Enterprise - Inquiry Details*\n` +
+        `=========================\n` +
+        `• *Name:* ${formData.name}\n` +
+        `• *Phone:* ${formData.phone}\n` +
+        `• *Product of Interest:* ${prodDisplay}\n` +
+        `• *Pond Symptoms / Details:* \n${formData.message || 'None'}`;
+
+    // Open WhatsApp message in a new window/tab
+    const submissionUrl = `https://wa.me/91${whatsappNumber}?text=${encodeURIComponent(waText)}`;
+    window.open(submissionUrl, '_blank');
+
     setIsSubmitted(true);
     setFormData({ name: '', phone: '', product: '', message: '' });
   };
